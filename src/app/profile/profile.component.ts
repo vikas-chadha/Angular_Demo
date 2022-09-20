@@ -92,6 +92,7 @@ export class ProfileComponent implements OnInit {
   }
 
   updateBillingAdd(){
+    console.log(this.BillingForm.value)
     if(this.BillingForm.valid){
       this.formData = new FormData();
       this.formData.append("id", localStorage.getItem('customerId')||localStorage.getItem('vendorId'));
